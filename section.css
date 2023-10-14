@@ -1,0 +1,89 @@
+.section1 {
+   width:1080px;
+  overflow:hidden;
+   justify-content: center;
+  align-items: center;
+   margin:0px auto;
+  
+}
+
+.section2 .indian_dresses {
+   display:flex;
+ width:100%;
+   height:max-content;
+  flex-wrap: wrap;
+   justify-content:center;
+  margin:10px auto;
+  
+}
+
+ .section2 .indian_dresses .items {
+   margin: 10px;
+   width:200px;
+ height: 300px;
+ background-color:white;
+   border:2.5px solid black;
+   border-radius: 12px;
+  
+}
+
+.section2 .indian_dresses .items .name {
+   text-align:center;
+  background-color:hwb(353 36% 12%);
+   height:35px;
+ padding-top:4px;
+   color:white;
+   margin: 0;
+  
+}
+
+ .section2 .indian_dresses .items .price {
+   float:left;
+   padding-left:10px;
+   display: block;
+   width:100%;
+  color:hwb(353 36% 12%);
+  font-weight: 650;
+  
+}
+
+ .section2 .indian_dresses .items .info {
+   padding-left:20px;
+  color:hwb(353 36% 12%);
+  
+}
+
+ .section2 .indian_dresses .items .img img {
+   width:200px;
+  height:200px;
+   margin: 0;
+  padding: 0;
+   border-radius:12px;
+   transition-duration:0.8s;
+  
+}
+
+ .section2 .indian_dresses .items .img {
+   overflow: hidden;
+   margin: 0;
+
+}
+
+ .section2 .indian_dresses .items:hover .img img {
+   transform: scale(1.2);
+   transition-duration:0.8s;
+   border-radius:12px;
+  
+}
+
+.img-slider {
+ animation-duration: 10s;
+   animation-iteration-count: infinite;
+   transition-duration:2s;
+   display:flex;
+   float:left;
+   position:relative;
+   width:1080px;
+   height:720px;
+   animation-name:slide;
+}

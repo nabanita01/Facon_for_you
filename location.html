@@ -1,0 +1,20 @@
+<header role="banner" class="column-xs main-xs-center">
+    <form id="locator" class="container column-xs row-md cross-xs-stretch cross-md-end" action="">
+      <div class="col">
+        <label for="locator_text">Type an address</label>
+        <input type="text" id="locator_text" name="locator_text" required>
+      </div>
+      <div class="col-xs-two-thirds col-md-quarter">
+        <label for="locator_radius">Within</label>
+        <select id="locator_radius" name="locator_radius">
+              <option value='10'>10 mi</option>
+              <option value='25'>25 mi</option>
+              <option value='50'>50 mi</option>
+              <option value='100'>100 mi</option>
+            </select>
+      </div>
+      <button type="submit">Search</button>
+    </form>
+  </header>
+  <aside id="map"></aside>
+  <main id="results"></main>

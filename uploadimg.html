@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/uploadimg.css">
+    <title>Document</title>
+    <style>
+    h1 {
+        color: green;
+    }
+      
+    .buttonIn {
+        width: 300px;
+        position: relative;
+    }
+      
+    input {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        outline: none;
+        height: 30px;
+        border-radius: 5px;
+    }
+      
+    button {
+        position: absolute;
+        top: 0;
+        border-radius: 5px;
+        right: 0px;
+        z-index: 2;
+        border: none;
+        top: 2px;
+        height: 30px;
+        cursor: pointer;
+        color: white;
+        background-color: #1e90ff;
+        transform: translateX(2px);
+    }
+      
+</style>
+
+</head>
+<body>
+
+    <section class="upload_image"></section>
+<p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+<p><label for="file" style="cursor: pointer;">Upload Image</label></p>
+<p><img id="output" width="300" /></p>
+
+<!--<div class="search">
+    <form class="search-form">
+        <input type="text" name="search" id="search" fdprocessedid="3vqli9">
+   		<button class="btn btn-sm" fdprocessedid="a5csqm">Search</button>
+    </form>
+</div>-->
+
+
+<style>
+.search
+{
+	border: 2px solid #CF5C3F;
+	overflow: auto;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.search input[type="text"]
+{
+	border: 0px;
+	width: 67%;
+	padding: 10px 10px;
+}
+
+.search input[type="text"]:focus
+{
+	outline: 0;
+}
+
+.search input[type="submit"]
+</style>
+
+
+<script>
+var loadFile = function(event) {
+	var image = document.getElementById('output');
+	image.src = URL.createObjectURL(event.target.files[0]);
+};
+</script>
+    
+</body>
+
+<body style="background:linear-gradient(rgba(0, 0,0, 0.4),rgba(0,0,0,0.4)),url('img/bg.jpg') no-repeat center center fixed; -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;">
+</body>
+
+<body>
+    <h1>gfdsaa</h1>
+    <b>Responsive clear field button</b>
+    <br><br>
+    <div class="buttonIn">
+        <input type="text" id="enter">
+        <button id="clear">clear</button>
+    </div>
+</body>
+</body>    
+</html>
+
